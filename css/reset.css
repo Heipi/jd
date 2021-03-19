@@ -1,3 +1,8 @@
+body{
+    scroll-behavior:initial;
+    scroll-behavior: unset;
+    overflow-y: scroll;
+}
 html,body,ul,li{
     margin: 0px;
     padding: 0px;
@@ -5,3 +10,8 @@ html,body,ul,li{
 li{
     list-style: none;
 }
+dl,dt,dd{
+ padding: 0px;
+ margin: 0px;
+}
+
