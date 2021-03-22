@@ -7,6 +7,7 @@ class Slider {
         this.sliders = this.picBox.children.length
         this.index = 1
         this.animated = false
+        this.auto = null
         this.init()
 
 
@@ -16,6 +17,7 @@ class Slider {
         this.initPoint()
         this.copyPic()
         this.leftRight()
+        this.autoPlay()
 
     }
 
@@ -114,7 +116,6 @@ class Slider {
             console.log("left");
             if(this.animated) return;
 
-
              if(this.index - 1 < 1){
                  this.index = this.sliders
              }else{
@@ -137,6 +138,22 @@ class Slider {
             }
             console.log("right=after=="+this.index)  
             this.move(this.sliderWidth)
+        })
+
+    }
+
+
+    autoPlay(){
+        this.auto = setInterval(()=>{
+            this.box.querySelector(".right-box").click()
+        },2000)
+         this.box.addEventListener("mouseenter",()=>{
+             clearInterval(this.auto)
+         })
+         this.box.addEventListener("mouseleave",()=>{
+            this.auto = setInterval(()=>{
+                this.box.querySelector(".right-box").click()
+            },2000)
         })
 
     }

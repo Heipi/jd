@@ -344,3 +344,49 @@
 .slider-box .index-box>ol>li.active{
      background: #e1251b;
  }
+
+
+ .ad-box{
+  width: 190px;
+  margin-right: 10px;    
+    
+ }
+
+ .ad-box .pic-box:not(:last-child){
+     height: 150px;
+     margin-bottom: 10px;
+ }
+ .new-box {
+    width: 160px;
+    background: #fff;
+    padding: 15px;
+}
+
+.new-box .new-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.new-box ul {
+    font-size: 12px;
+}
+
+.new-box ul li {
+    padding: 5px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.new-box ul li a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.new-box ul li a span {
+    color: #e1251b;
+    padding: 2px 4px;
+    background: rgba(225,37,27,.08);
+    margin-right: 5px;
+}
