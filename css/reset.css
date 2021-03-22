@@ -3,7 +3,7 @@ body{
     scroll-behavior: unset;
     overflow-y: scroll;
 }
-html,body,ul,li{
+html,body,ul,ol,li{
     margin: 0px;
     padding: 0px;
 }
